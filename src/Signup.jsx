@@ -1,5 +1,12 @@
 import React, { useState } from "react";
-import { Link, useNavigate, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+
+// Hardcoded user data to simulate a backend database
+const predefinedUsers = [
+  { email: "user1@example.com", password: "password123" },
+  { email: "user2@example.com", password: "password456" },
+  { email: "user3@example.com", password: "password789" },
+];
 
 const SignupPage = () => {
   const location = useLocation();
@@ -11,6 +18,13 @@ const SignupPage = () => {
   const navigate = useNavigate();
 
   const handleSignUp = () => {
+    // Check if the email is already registered in the predefined list
+    const userExists = predefinedUsers.some(user => user.email === email);
+    if (userExists) {
+      setErrorMessage("This email is already registered. Please sign in instead.");
+      return;
+    }
+
     if (password !== confirmPassword) {
       setErrorMessage("Passwords do not match.");
       return;
@@ -21,51 +35,37 @@ const SignupPage = () => {
     }
     
     setErrorMessage("");
+    // On successful "signup", we can navigate to the home page.
     navigate("/home");
   };
 
   return (
     <div
-      className="relative h-screen w-full bg-cover bg-center"
+      className="h-screen w-full bg-cover bg-center relative"
       style={{ backgroundImage: "url('/netflix-bg.jpg')" }}
     >
-      <div className="absolute inset-0 bg-black bg-opacity-60"></div>
-      <div className="relative z-10 flex justify-between items-center px-6 py-4">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png"
-          className="w-28 md:w-36"
-          alt="Netflix Logo"
-        />
-        <div className="flex items-center gap-2">
-          <Link to="/signin">
-            <button className="bg-red-600 hover:bg-red-700 px-4 py-1 rounded text-white font-medium">
-              Sign In
-            </button>
-          </Link>
-        </div>
-      </div>
-      <div className="relative z-10 flex flex-col items-center justify-center text-center h-[80vh] px-4 text-white">
-        <div className="bg-gray-900 bg-opacity-80 p-8 rounded-lg max-w-sm w-full">
-          <h2 className="text-2xl font-bold mb-6 text-center">Create Account</h2>
+      <div className="absolute inset-0 bg-black bg-opacity-80 flex items-center justify-center">
+        <div className="bg-black bg-opacity-70 p-8 rounded-md w-full max-w-md text-white">
+          <h2 className="text-3xl font-bold mb-6 text-center">Create Account</h2>
           <div className="flex flex-col gap-4">
             <input
               type="email"
               placeholder="Email Address"
-              className="px-4 py-3 rounded-md bg-gray-800 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-600"
+              className="w-full p-3 rounded bg-gray-800 border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-600"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
             <input
               type="password"
               placeholder="Password"
-              className="px-4 py-3 rounded-md bg-gray-800 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-600"
+              className="w-full p-3 rounded bg-gray-800 border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-600"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
             <input
               type="password"
               placeholder="Confirm Password"
-              className="px-4 py-3 rounded-md bg-gray-800 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-600"
+              className="w-full p-3 rounded bg-gray-800 border border-gray-700 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-600"
               value={confirmPassword}
               onChange={(e) => setConfirmPassword(e.target.value)}
             />

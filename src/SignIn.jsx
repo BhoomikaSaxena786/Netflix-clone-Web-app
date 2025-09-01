@@ -44,20 +44,20 @@ const SignInPage = () => {
         />
       </div>
       <div className="relative z-10 flex flex-col items-center justify-center text-center h-[80vh] px-4 text-white">
-        <div className="bg-gray-900 bg-opacity-80 p-8 rounded-lg max-w-sm w-full">
-          <h2 className="text-2xl font-bold mb-6 text-center">Sign In</h2>
+        <div className="bg-black bg-opacity-70 p-8 rounded-md w-full max-w-md">
+          <h2 className="text-3xl font-bold mb-6 text-center">Sign In</h2>
           <div className="flex flex-col gap-4">
             <input
               type="email"
               placeholder="Email Address"
-              className="px-4 py-3 rounded-md bg-gray-800 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-600"
+              className="w-full p-3 rounded bg-gray-800 text-white placeholder-gray-500 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-red-600"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
             <input
               type="password"
               placeholder="Password"
-              className="px-4 py-3 rounded-md bg-gray-800 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-600"
+              className="w-full p-3 rounded bg-gray-800 text-white placeholder-gray-500 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-red-600"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
@@ -66,10 +66,25 @@ const SignInPage = () => {
             )}
             <button
               onClick={handleSignIn}
-              className="w-full mt-2 bg-red-600 hover:bg-red-700 text-white font-semibold py-3 rounded-md transition-colors"
+              className="w-full mt-2 bg-red-600 hover:bg-red-700 text-white font-semibold p-3 rounded-md transition-colors"
             >
               Sign In
             </button>
+          </div>
+          <div className="flex justify-between items-center mt-4 text-sm">
+            <label className="flex items-center gap-2">
+                <input type="checkbox" className="h-4 w-4 bg-gray-800 border-gray-700 rounded-sm" />
+                Remember me
+            </label>
+            <Link to="/forgot-password" className="font-medium text-red-500 hover:text-red-400">
+                Forgot password?
+            </Link>
+          </div>
+          <div className="mt-6 text-sm">
+            New to Netflix?{" "}
+            <Link to="/signup" className="font-bold hover:underline">
+              Sign up now.
+            </Link>
           </div>
         </div>
       </div>
@@ -78,4 +93,3 @@ const SignInPage = () => {
 };
 
 export default SignInPage;
-

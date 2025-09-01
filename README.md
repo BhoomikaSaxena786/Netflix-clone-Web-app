@@ -12,8 +12,19 @@
 Responsive Movie Streaming App
 This project is a single-page, responsive movie streaming application designed to simulate a modern streaming platform's user experience. It serves as a comprehensive example of contemporary front-end development, showcasing a clean, component-based architecture built entirely with React and styled with a utility-first approach using Tailwind CSS. The application is a single, self-contained file, making it easy to deploy and share.
 
+
+Responsive :--
+
+
+<img width="1920" height="1080" alt="Screenshot (92)" src="https://github.com/user-attachments/assets/847d94e4-4749-41fb-b5a6-59c435accdb4" />
+
 <img width="1920" height="1080" alt="Screenshot (84)" src="https://github.com/user-attachments/assets/1537c894-792b-4ebd-89ef-45b080e6b934" />
 
+
+Key Features
+Dynamic & Responsive UI: The application offers an intuitive and dynamic user interface with a fixed navigation sidebar for seamless browsing. The entire layout is built with responsiveness in mind, ensuring an optimal viewing experience on any device, from desktop to mobile.
+
+Efficient Content Discovery: Users can explore a curated homepage showcasing featured and trending content. A built-in search functionality provides real-time filtering of the movie library by title and genre tags, allowing for quick and efficient content discovery.
 
 
 <img width="1920" height="1080" alt="Screenshot (90)" src="https://github.com/user-attachments/assets/2c8f8e7f-5466-4cb7-9403-e72fd12b4702" />
@@ -21,10 +32,6 @@ This project is a single-page, responsive movie streaming application designed t
 
 <img width="1920" height="1080" alt="Screenshot (85)" src="https://github.com/user-attachments/assets/306dcad1-9d38-438e-802e-3d70830c3245" />
 
-Key Features
-Dynamic & Responsive UI: The application offers an intuitive and dynamic user interface with a fixed navigation sidebar for seamless browsing. The entire layout is built with responsiveness in mind, ensuring an optimal viewing experience on any device, from desktop to mobile.
-
-Efficient Content Discovery: Users can explore a curated homepage showcasing featured and trending content. A built-in search functionality provides real-time filtering of the movie library by title and genre tags, allowing for quick and efficient content discovery.
 
 Interactive Details Modal: Clicking on any movie card triggers a full-screen modal popup. This immersive component provides a detailed overview of the movie, including its description, year, runtime, and rating, without requiring a page refresh.
 

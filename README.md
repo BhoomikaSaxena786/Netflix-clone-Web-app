@@ -1,4 +1,4 @@
-<img width="1920" height="1080" alt="Screenshot (84)" src="https://github.com/user-attachments/assets/0f533a91-66c4-41c0-b4f8-6cb3ea63f69c" /><img width="1920" height="1080" alt="Screenshot (80)" src="https://github.com/user-attachments/assets/14e1bf8b-650e-41c5-92d7-92f7c32363e8" />
+<img width="1920" height="1080" alt="Screenshot (80)" src="https://github.com/user-attachments/assets/14e1bf8b-650e-41c5-92d7-92f7c32363e8" />
 
 <img width="1920" height="1080" alt="Screenshot (89)" src="https://github.com/user-attachments/assets/9815f6d9-20a9-4645-8ff5-66463db5ac75" />
 
@@ -12,7 +12,12 @@
 Responsive Movie Streaming App
 This project is a single-page, responsive movie streaming application designed to simulate a modern streaming platform's user experience. It serves as a comprehensive example of contemporary front-end development, showcasing a clean, component-based architecture built entirely with React and styled with a utility-first approach using Tailwind CSS. The application is a single, self-contained file, making it easy to deploy and share.
 
-<img width="1920" height="1080" alt="Screenshot (84)" src="https://github.com/user-attachments/assets/61421ecd-b0ef-48bd-b071-e873e70653ea" />
+<img width="1920" height="1080" alt="Screenshot (84)" src="https://github.com/user-attachments/assets/1537c894-792b-4ebd-89ef-45b080e6b934" />
+
+
+
+<img width="1920" height="1080" alt="Screenshot (90)" src="https://github.com/user-attachments/assets/2c8f8e7f-5466-4cb7-9403-e72fd12b4702" />
+
 
 <img width="1920" height="1080" alt="Screenshot (85)" src="https://github.com/user-attachments/assets/306dcad1-9d38-438e-802e-3d70830c3245" />
 

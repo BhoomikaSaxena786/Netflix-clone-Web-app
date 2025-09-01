@@ -3,16 +3,16 @@ import { Link, useNavigate, useLocation } from "react-router-dom";
 import { LogOut, Home, Search, Tv, Download, User } from "lucide-react";
 
 // Movie data with updated image URLs
- const movies = [
-   { id: 1, title: 'Padmavat', imageUrl: '/inception.jpg', tags: ['Sci-Fi', 'Thriller'], rating: '7.8', description: 'A mind-bending sci-fi thriller about a professional thief who steals secrets from the subconscious minds of his targets.', trailerUrl: 'https://www.youtube.com/watch?v=X_5_BLt76c0' },
-   { id: 2, title: 'Kabil', imageUrl: '/stranger.jpg', tags: ['Sci-Fi', 'Horror', 'Mystery'], rating: '8.7', description: 'When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.', trailerUrl: 'https://www.youtube.com/watch?v=Pt3KKIWJmZ8' },
+const movies = [
+  { id: 1, title: 'Padmavat', imageUrl: '/inception.jpg', tags: ['Sci-Fi', 'Thriller'], rating: '7.8', description: 'A mind-bending sci-fi thriller about a professional thief who steals secrets from the subconscious minds of his targets.', trailerUrl: 'https://www.youtube.com/watch?v=X_5_BLt76c0' },
+  { id: 2, title: 'Kabil', imageUrl: '/stranger.jpg', tags: ['Sci-Fi', 'Horror', 'Mystery'], rating: '8.7', description: 'When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.', trailerUrl: 'https://www.youtube.com/watch?v=Pt3KKIWJmZ8' },
   { id: 3, title: 'Raees', imageUrl: '/moneyheist.jpg', tags: ['Crime', 'Thriller', 'Drama'], rating: '8.2', description: 'A criminal mastermind who goes by "The Professor" has a plan to pull off the biggest heist in history.', trailerUrl: 'https://www.youtube.com/watch?v=J7_1MU3gDk0' },
-   { id: 4, title: 'The Hit squad', imageUrl: '/img6.jpg', tags: ['Romance', 'Drama'], rating: '6.5', description: 'An action-packed thriller about an elite team of agents on a high-stakes mission to dismantle a global criminal organization.', trailerUrl: 'https://www.youtube.com/watch?v=6ZfuNTqbHE8' },
-   { id: 5, title: 'Do patti', imageUrl: '/img4.jpg', tags: ['Action'], rating: '5.9', description: 'A fast-paced action movie with intense stunts and a gripping storyline about a lone hero seeking justice.', trailerUrl: 'https://www.youtube.com/watch?v=b6Z_RYC8IAQ' },
-   { id: 6, title: 'Love per suqare foot', imageUrl: '/img5.jpg', tags: ['Comedy'], rating: '7.0', description: 'A hilarious romantic comedy about two young professionals who decide to get married to buy an apartment together.', trailerUrl: 'https://www.youtube.com/watch?v=2I_eypETmKo' },
-   { id: 7, title: 'Sword of destiny', imageUrl: '/img2.webp', tags: ['Fantasy'], rating: '7.3', description: 'A fantasy epic following a legendary warrior on a quest to retrieve a powerful sword and save his kingdom from a dark force.', trailerUrl: 'https://www.youtube.com/watch?v=WdhvxJZDqzU' },
-   { id: 8, title: 'Tiger-3', imageUrl: '/hero.jpg', tags: ['Sci-Fi'], rating: '8.0', description: 'A futuristic sci-fi action film where a rogue agent must prevent a catastrophic event that threatens the entire planet.', trailerUrl: 'https://www.youtube.com/watch?v=vEjTUDjjU6A' },
- ];
+  { id: 4, title: 'The Hit squad', imageUrl: '/img6.jpg', tags: ['Romance', 'Drama'], rating: '6.5', description: 'An action-packed thriller about an elite team of agents on a high-stakes mission to dismantle a global criminal organization.', trailerUrl: 'https://www.youtube.com/watch?v=6ZfuNTqbHE8' },
+  { id: 5, title: 'Do patti', imageUrl: '/img4.jpg', tags: ['Action'], rating: '5.9', description: 'A fast-paced action movie with intense stunts and a gripping storyline about a lone hero seeking justice.', trailerUrl: 'https://www.youtube.com/watch?v=b6Z_RYC8IAQ' },
+  { id: 6, title: 'Love per suqare foot', imageUrl: '/img5.jpg', tags: ['Comedy'], rating: '7.0', description: 'A hilarious romantic comedy about two young professionals who decide to get married to buy an apartment together.', trailerUrl: 'https://www.youtube.com/watch?v=2I_eypETmKo' },
+  { id: 7, title: 'Sword of destiny', imageUrl: '/img2.webp', tags: ['Fantasy'], rating: '7.3', description: 'A fantasy epic following a legendary warrior on a quest to retrieve a powerful sword and save his kingdom from a dark force.', trailerUrl: 'https://www.youtube.com/watch?v=WdhvxJZDqzU' },
+  { id: 8, title: 'Tiger-3', imageUrl: '/hero.jpg', tags: ['Sci-Fi'], rating: '8.0', description: 'A futuristic sci-fi action film where a rogue agent must prevent a catastrophic event that threatens the entire planet.', trailerUrl: 'https://www.youtube.com/watch?v=vEjTUDjjU6A' },
+];
 const MovieCard = ({ movie, onClick }) => (
   <div
     className="flex-shrink-0 w-48 h-64 rounded-md overflow-hidden transform hover:scale-105 transition-transform duration-200 cursor-pointer"
@@ -27,7 +27,7 @@ const MoviePopup = ({ movie, onClose }) => {
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75 backdrop-blur-sm p-4">
-      <div className="bg-gray-900 rounded-lg max-w-2xl w-full p-6 relative flex flex-col md:flex-row shadow-lg transform scale-95 md:scale-100 transition-transform duration-200">
+      <div className="bg-black bg-opacity-70 rounded-lg max-w-2xl w-full p-6 relative flex flex-col md:flex-row shadow-lg transform scale-95 md:scale-100 transition-transform duration-200">
         
         {/* Close Button */}
         <button
@@ -57,7 +57,7 @@ const MoviePopup = ({ movie, onClose }) => {
             </span>
             <span className="text-lg">{movie.rating}/10</span>
           </div>
-          <p className="text-gray-300 mb-6">{movie.description}</p>
+          <p className="text-gray-400 mb-6">{movie.description}</p>
           <a
             href={movie.trailerUrl}
             target="_blank"
@@ -137,7 +137,7 @@ const HomePage = () => {
                 <p className="text-red-600 font-bold mb-2">FEATURED MOVIE</p>
                 <h2 className="text-5xl font-bold mb-2 leading-tight">{featuredMovie.title}</h2>
                 <p className="text-xl mb-4">{featuredMovie.description}</p>
-                <div className="flex items-center gap-4 text-gray-300 text-sm mb-4">
+                <div className="flex items-center gap-4 text-gray-400 text-sm mb-4">
                   <span className="bg-yellow-500 text-black px-2 py-0.5 rounded-sm font-bold">IMDb</span>
                   <span>{featuredMovie.rating}/10</span>
                   <span>2023 Action</span>
@@ -186,7 +186,7 @@ const HomePage = () => {
               <input
                 type="text"
                 placeholder="Search for a movie, series, or genre..."
-                className="w-full p-4 pl-12 rounded-full bg-gray-800 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-red-600"
+                className="w-full p-4 pl-12 rounded-full bg-gray-800 text-white placeholder-gray-500 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-red-600"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
               />
@@ -222,17 +222,16 @@ const HomePage = () => {
       
       case 'my-netflix':
         const watchHistory = [
-
-          { id: 1, title: 'Inception', imageUrl: '/inception.jpg', progress: '80%' },
-          { id: 3, title: 'Money Heist', imageUrl: '/moneyheist.jpg', progress: '100%' },];
-        const mylist = [{ id: 2, title: 'Stranger Things', imageUrl: '/stranger.jpg' }, { id: 4, title: 'Aadha Ishq', imageUrl: '/img6.jpg' },];
+          { id: 1, title: 'Inception', imageUrl: '/inception.jpg', progress: '80%' },
+          { id: 3, title: 'Money Heist', imageUrl: '/moneyheist.jpg', progress: '100%' },];
+        const mylist = [{ id: 2, title: 'Stranger Things', imageUrl: '/stranger.jpg' }, { id: 4, title: 'Aadha Ishq', imageUrl: '/img6.jpg' },];
 
         return (
           <div className="p-8">
             <h2 className="text-4xl font-bold mb-8">My Netflix</h2>
 
             {/* Profile Section */}
-            <div className="bg-gray-900 rounded-lg p-6 flex items-center mb-10">
+            <div className="bg-black bg-opacity-70 rounded-lg p-6 flex items-center mb-10">
               <div className="w-24 h-24 rounded-full mr-6 border-2 border-red-600 bg-gray-700 flex items-center justify-center text-4xl font-bold">
                 {userProfile?.initials || getInitials(userProfile?.name)}
               </div>

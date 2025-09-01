@@ -1,3 +1,6 @@
+Responsive Movie Streaming App
+This project is a single-page, responsive movie streaming application designed to simulate a modern streaming platform's user experience. It serves as a comprehensive example of contemporary front-end development, showcasing a clean, component-based architecture built entirely with React and styled with a utility-first approach using Tailwind CSS. The application is a single, self-contained file, making it easy to deploy and share.
+
 <img width="1920" height="1080" alt="Screenshot (80)" src="https://github.com/user-attachments/assets/14e1bf8b-650e-41c5-92d7-92f7c32363e8" />
 
 <img width="1920" height="1080" alt="Screenshot (89)" src="https://github.com/user-attachments/assets/9815f6d9-20a9-4645-8ff5-66463db5ac75" />
@@ -8,13 +11,7 @@
 
 <img width="1920" height="1080" alt="Screenshot (83)" src="https://github.com/user-attachments/assets/ed78765d-9d01-418a-aa78-8fbfe887374f" />
 
-
-Responsive Movie Streaming App
-This project is a single-page, responsive movie streaming application designed to simulate a modern streaming platform's user experience. It serves as a comprehensive example of contemporary front-end development, showcasing a clean, component-based architecture built entirely with React and styled with a utility-first approach using Tailwind CSS. The application is a single, self-contained file, making it easy to deploy and share.
-
-
 Responsive :--
-
 
 <img width="1920" height="1080" alt="Screenshot (92)" src="https://github.com/user-attachments/assets/847d94e4-4749-41fb-b5a6-59c435accdb4" />
 
@@ -26,18 +23,12 @@ Dynamic & Responsive UI: The application offers an intuitive and dynamic user in
 
 Efficient Content Discovery: Users can explore a curated homepage showcasing featured and trending content. A built-in search functionality provides real-time filtering of the movie library by title and genre tags, allowing for quick and efficient content discovery.
 
+Interactive Details Modal: Clicking on any movie card triggers a full-screen modal popup. This immersive component provides a detailed overview of the movie, including its description, year, runtime, and rating, without requiring a page refresh.
+
 
 <img width="1920" height="1080" alt="Screenshot (90)" src="https://github.com/user-attachments/assets/2c8f8e7f-5466-4cb7-9403-e72fd12b4702" />
 
-
 <img width="1920" height="1080" alt="Screenshot (85)" src="https://github.com/user-attachments/assets/306dcad1-9d38-438e-802e-3d70830c3245" />
-
-
-Interactive Details Modal: Clicking on any movie card triggers a full-screen modal popup. This immersive component provides a detailed overview of the movie, including its description, year, runtime, and rating, without requiring a page refresh.
-
-<img width="1920" height="1080" alt="Screenshot (86)" src="https://github.com/user-attachments/assets/fa55d8bc-3241-4bc8-b609-c321a72521d9" />
-
-<img width="1920" height="1080" alt="Screenshot (87)" src="https://github.com/user-attachments/assets/2dbb68ca-67d2-4d9a-a06d-25fe8c3d6243" />
 
 User-Centric Experience: A dedicated "My Netflix" section demonstrates state management by allowing users to track their watch history and manage a personal watchlist. The application also includes "Coming Soon" and "Downloads" sections to round out the user experience.
 
@@ -56,3 +47,8 @@ User Authentication: Implement a full user authentication flow to allow for pers
 Advanced Filtering: Add more advanced filtering and sorting options to enhance content discovery.
 
 This project can be easily expanded upon to serve as the front end for a complete, production-level streaming service
+
+
+<img width="1920" height="1080" alt="Screenshot (86)" src="https://github.com/user-attachments/assets/fa55d8bc-3241-4bc8-b609-c321a72521d9" />
+
+<img width="1920" height="1080" alt="Screenshot (87)" src="https://github.com/user-attachments/assets/2dbb68ca-67d2-4d9a-a06d-25fe8c3d6243" />

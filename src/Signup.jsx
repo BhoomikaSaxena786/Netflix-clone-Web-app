@@ -18,7 +18,6 @@ const SignupPage = () => {
   const navigate = useNavigate();
 
   const handleSignUp = () => {
-    // Check if the email is already registered in the predefined list
     const userExists = predefinedUsers.some(user => user.email === email);
     if (userExists) {
       setErrorMessage("This email is already registered. Please sign in instead.");

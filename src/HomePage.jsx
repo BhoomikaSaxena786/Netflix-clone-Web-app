@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { LogOut, Home, Search, Tv, Download, User } from "lucide-react";
 
-// Movie data with updated image URLs
+// Movie data 
 const movies = [
   { id: 1, title: 'Padmavat', imageUrl: '/inception.jpg', tags: ['Sci-Fi', 'Thriller'], rating: '7.8', description: 'A mind-bending sci-fi thriller about a professional thief who steals secrets from the subconscious minds of his targets.', trailerUrl: 'https://www.youtube.com/watch?v=X_5_BLt76c0' },
   { id: 2, title: 'Kabil', imageUrl: '/stranger.jpg', tags: ['Sci-Fi', 'Horror', 'Mystery'], rating: '8.7', description: 'When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.', trailerUrl: 'https://www.youtube.com/watch?v=Pt3KKIWJmZ8' },
